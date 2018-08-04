@@ -49,7 +49,7 @@ var orm = {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += cols.toString();
+    queryString += cols;
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
